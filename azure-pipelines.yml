@@ -59,8 +59,8 @@ stages:
             inputs:
               action: deploy
               manifests: |
-                $(Pipeline.Workspace)/HelloAspNetCore/manifests/deployment.yml
-                $(Pipeline.Workspace)/HelloAspNetCore/manifests/service.yml
+                $(Pipeline.Workspace)/manifests/deployment.yml
+                $(Pipeline.Workspace)/manifests/service.yml
               containers: |
                 $(containerRegistry)/$(imageRepository):$(tag)
 
