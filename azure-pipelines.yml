@@ -50,7 +50,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'bsellamuthuhelloaspnetcore.default'
+    environment: 'hello-aspnetcore.default'
     strategy:
       runOnce:
         deploy:
